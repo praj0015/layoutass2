@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Niramit|Roboto');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
 :root
 {
     --fontsize:1rem;
@@ -10,7 +9,8 @@
     --pright:1rem;
     --pleft:1rem;
 }
-
+@import url('https://fonts.googleapis.com/css?family=Niramit|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 *,
 *::after,
 *::before{
@@ -32,7 +32,7 @@ h1, h2, h3, h4{
     padding-right: var(--pright);
 }
 p{
-    font-family: sans-serif,'Inconsolata';
+    font-family: 'Inconsolata','Roboto', sans-serif;
 }
 .container{
         max-width: 1500px;
@@ -46,7 +46,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items:center;
     flex-wrap: wrap;
     background-color: hsl(135deg,100%,50%);
 }
@@ -86,15 +86,7 @@ p{
          height: 200px;
      }
     }
-/*
-@media(max-width:600px)
-{
-    .mainnav a:nth-child(3){
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-}
-*/
+
 @media(max-width:200px) and (min-width:599px)
 {
     .times-logo{
