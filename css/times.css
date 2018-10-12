@@ -52,8 +52,8 @@ p{
     font-family: sans-serif;
 }
 .mainnav{
-    margin-left:var(--mleft);
-    margin-right: var(--mright);
+    margin-left:1.5rem;
+    margin-right: 1.5rem;
     padding-left: var(--pleft);
     padding-right: var(--pright);
     display: flex;
@@ -90,39 +90,65 @@ p{
 .mainnav a{
     font-family: sans-serif;
 }
+
 .masthead{
     
-}
+          }
+
+
 .times-logo{
     height: 300px;
 }
-.masthead h1{
-    
+@media(max-width:600px)
+{
+   .masthead h1{
+                    color: hsl(220deg,100%,50%);
+            } 
 }
+
 .content{
-    
+            margin-right: var(--mright);
+            margin-left: var(--mleft);
+            padding-left: var(--pleft);
+            padding-right: var(--pright);
+
 }
 .content .story{
     
 }
 .story.lead-story{
-    
+                    
+}
+.lead-story{
+            margin-right: 2rem;
+            margin-left: var(--mleft);
+            padding-left: var(--pleft);
+            padding-right: var(--pright);
 }
 h1.story-title{
-     margin-right:var(--mright);
+    margin-right:var(--mright);
     margin-left: var(--mleft);
     padding-left: var(--pleft);
     padding-right: var(--pright);
 }
-.story img{
-    width: 300px;
-    height: 300px;
-    border-bottom-style: hidden;
+.lead-story .story-title
+{   
+    font-size: 2rem;
+    color: hsl(110deg,100%,50%);
 }
+ @media(max-width:1000px)
+ {
+     .story-img{
+    width: 150px;
+    height: 150px;
+    border-bottom-style: hidden;
+     }
+ }
+
 .story p{
-    margin-right: 3rem;
+    margin-right: 1rem;
     margin-left: 1rem;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     padding-right: 1rem;
 }
 .story blockquote{
