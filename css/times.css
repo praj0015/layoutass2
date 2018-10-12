@@ -37,6 +37,7 @@ p{
         
     }
 }
+.story
 .subnav{
     margin-left: var(--mleft);
     margin-right: var(--mright);
@@ -50,6 +51,7 @@ p{
 }
 .subnav a{
     font-family: sans-serif;
+    text-decoration: none;
 }
 .mainnav{
     margin-left:1.5rem;
@@ -69,17 +71,27 @@ p{
         border: 0.1rem solid hsl(220deg,100%,50%);
         font-display: auto;
         font-size:1.2rem;
-        background-color: yellow;
+        background-color: yellow;    
      }
      .mainnav a{
          color:red;
-         font-family: fantasy;
+         font-family: sans-serif serif;
+         text-decoration: none;
      } 
      .times-logo{
          width: 560px;
          height: 200px;
      }
     }
+/*
+@media(max-width:600px)
+{
+    .mainnav a:nth-child(3){
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+*/
 @media(max-width:200px) and (min-width:599px)
 {
     .times-logo{
@@ -114,7 +126,7 @@ p{
 
 }
 .content .story{
-    
+                
 }
 .story.lead-story{
                     
@@ -133,6 +145,7 @@ h1.story-title{
 }
 .lead-story .story-title
 {   
+    margin-left: 0rem;
     font-size: 2rem;
     color: hsl(110deg,100%,50%);
 }
