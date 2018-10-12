@@ -142,7 +142,7 @@ h1.story-title{
 {   
     margin-left: 0rem;
     font-size: 3rem;
-    color: hsl(0deg,100%,0%);
+    color: hsl(0deg,100%,50%);
 }
  @media(max-width:1000px)
  {
@@ -177,7 +177,7 @@ h1.story-title{
     content: open-quote;
     margin-right: 1rem;
     margin-left: 1rem;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
     padding-right: 1rem;
 }
 .story blockquote::after{
