@@ -1,4 +1,5 @@
-*,
+@import url('https://fonts.googleapis.com/css?family=Niramit|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 :root
 {
     --fontsize:1rem;
@@ -9,6 +10,8 @@
     --pright:1rem;
     --pleft:1rem;
 }
+
+*,
 *::after,
 *::before{
     padding: 0.5rem 0rem 0.5rem 0rem;
@@ -29,15 +32,12 @@ h1, h2, h3, h4{
     padding-right: var(--pright);
 }
 p{
-    font-family: sans-serif;
+    font-family: sans-serif,'Inconsolata';
 }
 .container{
-    @media(max-width:1500px)
-    {
-        
-    }
+        max-width: 1500px;
 }
-.story
+
 .subnav{
     margin-left: var(--mleft);
     margin-right: var(--mright);
@@ -45,13 +45,15 @@ p{
     padding-right: var(--pright);
     display: flex;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: flex-end;
-    background-color: hsl(220deg,50%,70%);
+    flex-wrap: wrap;
+    background-color: hsl(135deg,100%,50%);
 }
 .subnav a{
     font-family: sans-serif;
     text-decoration: none;
+    color: hsl(0deg,100%,50%);
 }
 .mainnav{
     margin-left:1.5rem;
@@ -62,6 +64,7 @@ p{
     flex-direction: row;
     justify-content:space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     font-size: 1.5rem;
     border: 0.2rem solid hsl(0deg,100%,50%);
     background-color: hsl(0deg,100%,50%);
@@ -71,10 +74,10 @@ p{
         border: 0.1rem solid hsl(220deg,100%,50%);
         font-display: auto;
         font-size:1.2rem;
-        background-color: yellow;    
+        background-color: hsl(220deg,50%,50%);    
      }
      .mainnav a{
-         color:red;
+         color:hsl(0deg,100%,50%);
          font-family: sans-serif serif;
          text-decoration: none;
      } 
@@ -100,11 +103,11 @@ p{
     }
 }
 .mainnav a{
-    font-family: sans-serif;
+    font-family: serif;
 }
 
 .masthead{
-    
+            font-family: sans-serif;    
           }
 
 
@@ -146,12 +149,13 @@ h1.story-title{
 .lead-story .story-title
 {   
     margin-left: 0rem;
-    font-size: 2rem;
-    color: hsl(110deg,100%,50%);
+    font-size: 3rem;
+    color: hsl(0deg,100%,0%);
 }
  @media(max-width:1000px)
  {
      .story-img{
+         float:left;
     width: 150px;
     height: 150px;
     border-bottom-style: hidden;
@@ -171,7 +175,12 @@ h1.story-title{
     padding-left: var(--pleft);
     padding-right: var(--pright);
 }
+ blockquote::first-letter{
+    font-size: 2rem;
+}
+
 .story blockquote::before{
+
     font-family: sans-serif;
     content: open-quote;
     margin-right: 1rem;
@@ -194,6 +203,10 @@ p.byline span.author{
 }
 p.byline span.pub{
      font-family: sans-serif;
+}
+p::first-letter{
+    font-size: 1.5rem;
+    color: hsl(0deg,100%,50%);
 }
 .foot{
     margin-left: var(--mleft);
