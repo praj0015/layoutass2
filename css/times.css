@@ -46,7 +46,7 @@ p{
     flex-direction: row;
     justify-content:flex-end;
     align-items: flex-end;
-    background-color: aqua;
+    background-color: hsl(220deg,50%,70%);
 }
 .subnav a{
     font-family: sans-serif;
@@ -62,7 +62,7 @@ p{
     align-items: center;
     font-size: 1.5rem;
     border: 0.2rem solid hsl(0deg,100%,50%);
-    background-color: cyan;
+    background-color: hsl(0deg,100%,50%);
 }
  @media(max-width:600px){
      .mainnav{
@@ -76,15 +76,15 @@ p{
          font-family: fantasy;
      } 
      .times-logo{
-         width: 600px;
+         width: 560px;
          height: 200px;
      }
     }
 @media(max-width:200px) and (min-width:599px)
 {
     .times-logo{
-        width: 700px;
-        height: 300px;
+        width: 600px;
+        height: 200px;
     }
 }
 .mainnav a{
